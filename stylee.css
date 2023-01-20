@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+}
+
+h1 {
+    margin-bottom: 30px; 
+    text-align: center;
+    font-size: 100px;
+}
+
+
+.container {
+    display: flex;
+    margin: auto; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-direction: row;
+    text-align: center;
+    gap: 50px;
+}
+
+.box {
+    flex: 1;
+    min-width: 250px;
+    min-height: 250px;
+    border: 5px solid #FFFFFF;
+    padding: 50px;
+    box-shadow: 10px 10px lightblue;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.spacer {
+        flex: 3;
+}
+
+.btn1 {
+    justify-content: center;
+    border: 5px solid #FFFFFF;
+    box-shadow: 10px 10px lightblue;
+    width: 300px;
+    height: 100px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+}
+
+.score {
+    flex: 3;
+    border: 5px solid #FFFFFF;
+    padding: 50px;
+    box-shadow: 10px 10px lightblue;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.centered {
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

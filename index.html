@@ -4,24 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title> Rock Paper Scissors </title>
 </head>
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 <body>
-<h1 style="margin-bottom: 30px; text-align: center;"> Rock Paper Scissors Game </h1>
-<div style="margin: auto; text-align: center;">
-    <button id="rock" onclick="game('rock')"> Rock </button>
-    <button id="paper" onclick="game('paper')"> Paper </button>
-    <button id="scissors" onclick="game('scissors')"> Scissors </button>
+<h1> Rock Paper Scissors Game </h1>
+<div class="container">
+    <div class="spacer"></div>
+    <div class="box" id="rock" onclick="game('rock')">
+        <img src="stone.png" width="250px" height="250px">
+    </div>
+    <div class="box" id="rock" onclick="game('paper')">
+        <img src="paper.png" width="250px" height="250px">
+    </div>
+    <div class="box" id="rock" onclick="game('scissors')">
+        <img src="scissors.png" width="250px" height="250px">
+    </div>
+    <div class="spacer"></div>
 </div>
-<div style="margin: auto; text-align: center;">
-    <h1> You chose: <span id="playerChoice"></span> </h1>
-    <h1> Computer chose: <span id="computerChoice"></span> </h1>
-    <h1> The winner is: <span id="result"></span></h1>
+<div class="container">
+    <div class="spacer"></div>
+    <div class="center score">
+        <h2> You chose: <span id="playerChoice"></span> </h2>
+        <h2> Computer chose: <span id="computerChoice"></span> </h2>
+        <h2> The winner is: <span id="result"></span></h2>
+    </div>
+    <div class="spacer"></div>
+
 </div>
 <div style="margin: auto; text-align: center;">
     <h1> Computer Score: <span id="compScore"></span> </h1>
     <h1> Player Score: <span id="playerScore"></span> </h1>
+</div>
+<div class="centered">
+    <button class="btn1"> Reset </button>
 </div>
 
 </body>

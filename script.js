@@ -64,5 +64,11 @@ function round() {
     }
 }
 
-game('rock');
-//round();
+
+const reset = document.querySelector(".btn1")
+reset.addEventListener('click', () => {
+    player = 0;
+    document.getElementById("playerScore").innerHTML = player;
+    computer = 0;
+    document.getElementById("compScore").innerHTML = computer;
+});
